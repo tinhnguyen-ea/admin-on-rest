@@ -17,6 +17,32 @@ All inputs and fields accept the following properties:
 In addition to these common `props`, you can also configure each field independently,
 depending of their types.
 
+## Boolean Fields and Inputs
+
+### NotNullableBooleanInput
+
+![NotNullableBooleanInput](./img/not-nullable-boolean-input.png)
+
+`<NotNullableBooleanInput />` is a toggle button allowing you to attribute a `true` or `false`
+value to a record field.
+
+This input does not handle `null` values. You would need the `<BooleanInput />`
+component if you have to handle non-set booleans.
+
+### BooleanInput
+
+![BooleanInput](./img/boolean-input.png)
+
+As explained in the previous section, `<BooleanInput />` is a nullable boolean field
+displayed as a select list.
+
+### BooleanField
+
+![BooleanField](./img/boolean-field.png)
+
+Displaying a boolean does not depend of its nullable type. Hence, there is a single
+`<BooleanField />`, whatever boolean value is.
+
 ## Text Fields and Inputs (and Related Ones: Email, Password, etc.)
 
 ### Text Inputs
