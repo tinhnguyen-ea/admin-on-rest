@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+    BooleanInput,
     Create,
     Datagrid,
     DateField,
@@ -9,7 +10,6 @@ import {
     EditButton,
     Filter,
     List,
-    LongTextInput,
     ReferenceManyField,
     TextField,
     TextInput,
@@ -68,6 +68,7 @@ export const PostCreate = (props) => (
         <RichTextInput label="Body" source="body" />
         <DateInput label="Publication date" source="published_at" />
         <TextInput label="Average note" source="average_note" />
+        <BooleanInput label="Allow comments?" source="commentable" />
     </Create>
 );
 
@@ -80,6 +81,7 @@ export const PostEdit = (props) => (
         <RichTextInput label="Body" source="body" validation={{ required: true }} />
         <DateInput label="Publication date" source="published_at" />
         <TextInput label="Average note" source="average_note" validation={{ min: 0 }} />
+        <BooleanInput label="Allow comments?" source="commentable" />
         <ReferenceManyField label="Comments" reference="comments" target="post_id">
             <Datagrid selectable={false}>
                 <TextField source="body" />
