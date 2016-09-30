@@ -19,21 +19,21 @@ depending of their types.
 
 ## Boolean Fields and Inputs
 
-### NotNullableBooleanInput
-
-![NotNullableBooleanInput](./img/not-nullable-boolean-input.png)
-
-`<NotNullableBooleanInput />` is a toggle button allowing you to attribute a `true` or `false`
-value to a record field.
-
-This input does not handle `null` values. You would need the `<BooleanInput />`
-component if you have to handle non-set booleans.
-
 ### BooleanInput
 
 ![BooleanInput](./img/boolean-input.png)
 
-As explained in the previous section, `<BooleanInput />` is a nullable boolean field
+`<BooleanInput />` is a toggle button allowing you to attribute a `true` or `false`
+value to a record field.
+
+This input does not handle `null` values. You would need the `<NullableBooleanInput />`
+component if you have to handle non-set booleans.
+
+### NullableBooleanInput
+
+![NullableBooleanInput](./img/nullable-boolean-input.png)
+
+As explained in the previous section, `<NullableBooleanInput />` is a nullable boolean field
 displayed as a select list.
 
 ### BooleanField
