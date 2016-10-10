@@ -1,5 +1,6 @@
 export DateInput from './DateInput';
 export DisabledInput from './DisabledInput';
+export FileInput from './FileInput';
 export Labeled from './Labeled';
 export LongTextInput from './LongTextInput';
 export RadioButtonGroupInput from './RadioButtonGroupInput';

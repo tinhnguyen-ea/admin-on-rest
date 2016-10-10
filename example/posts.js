@@ -7,9 +7,9 @@ import {
     DisabledInput,
     Edit,
     EditButton,
+    FileInput,
     Filter,
     List,
-    LongTextInput,
     ReferenceManyField,
     Show,
     ShowButton,
@@ -77,6 +77,7 @@ export const PostEdit = (props) => (
     <Edit title={PostTitle} {...props}>
         <DisabledInput label="Id" source="id" />
         <TextInput source="title" validation={{ required: true }} />
+        <FileInput source="picture" label="Preview Pictures" accept="image/*" />
         <TextInput label="Password (if protected post)" source="password" type="password" />
         <LongTextInput source="teaser" validation={{ required: true }} />
         <RichTextInput source="body" validation={{ required: true }} />
